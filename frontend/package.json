@@ -1,0 +1,23 @@
+{
+  "name": "auction-dapp",
+  "version": "1.0.0",
+  "description": "auction dapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ilovelili/auction-dapps.git"
+  },
+  "keywords": [
+    "dapp"
+  ],
+  "author": "min ju",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ilovelili/auction-dapps/issues"
+  },
+  "homepage": "https://github.com/ilovelili/auction-dapps#readme",
+  "dependencies": {}
+}
