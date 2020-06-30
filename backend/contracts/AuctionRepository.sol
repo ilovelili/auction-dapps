@@ -182,7 +182,7 @@ contract AuctionRepository {
      * @param _auctionTitle string containing auction title
      * @param _metadata string containing auction metadata
      * @param _startPrice uint256 starting price of the auction
-     * @param _blockDeadline uint is the timestamp in which the auction expires
+     * @param _blockDeadline uint256 is the timestamp in which the auction expires
      * @return bool whether the auction is created
      */
     function createAuction(
@@ -194,8 +194,10 @@ contract AuctionRepository {
         uint256 _blockDeadline
     )
         public
-        contractIsDeedOwner(_deedRepositoryAddress, _deedId)
-        returns (bool)
+        returns (
+            // contractIsDeedOwner(_deedRepositoryAddress, _deedId)
+            bool
+        )
     {
         uint256 auctionId = auctions.length;
         Auction memory newAuction;
